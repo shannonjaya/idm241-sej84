@@ -24,6 +24,11 @@ body {
   text-wrap: balance;
 }
 
+main {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 /* Text Styles */
 h1, h2 {
   font-weight: 700;
@@ -211,8 +216,9 @@ details {
 
 footer {
   text-align: center;
-  padding: calc(var(--rhythm)*0.5);
-  color: var(--gray);
+  padding: calc(var(--rhythm)*0.1);
+  color: var(--white);
+  background-color: var(--black);
 }
 
 @media (max-width: 1000px) {
