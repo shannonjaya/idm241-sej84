@@ -76,6 +76,11 @@ li {
   line-height: 1.5rem;
 }
 
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
 /* Header Styles */
 
 header {
@@ -120,6 +125,13 @@ header {
   justify-content: center;
   height: 100%;
 }
+
+  .hero-subtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: calc(var(--rhythm)*0.3);
+  }
 
 .hero-logo {
   height: 100%;
