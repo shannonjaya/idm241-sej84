@@ -190,6 +190,7 @@
             <div class="details-column-1">
               <h4 class="details-column-heading">Hover On</h4>
               <div>
+                <p>The system checks whether a size has been selected to determine button state:</p>
                 <p>Inactive state (before size is selected)</p>
                 <ul>
                   <li>Cursor changes to pointer.</li>
@@ -231,12 +232,13 @@
               <div>
                 <ul>
                   <li>
-                    If a required option is not selected (size), red error text
-                    appears under the size selector.
+                    System checks whether a size has been selected (color and width are preselected by default).
                   </li>
                   <li>
-                    If a size is selected, the modal closes and the cart modal
-                    slides in from the right.
+                    If no size is selected, the button action is blocked and red error text appears under the size selector.
+                  </li>
+                  <li>
+                    If a size is selected, product data is added to the cart in the backend/database. The product modal closes, and the cart modal slides in from the right.
                   </li>
                 </ul>
               </div>
