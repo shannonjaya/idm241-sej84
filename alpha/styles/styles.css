@@ -258,9 +258,7 @@ footer {
   }
 
   .details-column-2 {
-    border-width: 0;
-    border-style: none;
-    border-color: none;
+    border: none;
   }
 
   .details {
