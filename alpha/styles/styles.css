@@ -126,6 +126,10 @@ header {
   height: 100%;
 }
 
+.hero-title > h1 {
+  margin-bottom: calc(var(--rhythm)*0.5);
+}
+
 .hero-logo {
   height: 100%;
   width: auto;
