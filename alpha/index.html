@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> IDM-241 | Shannon Jaya | Alpha</title>
-    <link rel="icon" type="image/x-icon" href="./assets/converse-favicon.png">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://use.typekit.net/syp8ril.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDM-241 | Shannon Jaya | Alpha</title>
+    <link rel="icon" type="image/x-icon" href="./assets/converse-favicon.png" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://use.typekit.net/syp8ril.css" />
   </head>
 
   <body>
@@ -46,8 +46,13 @@
         <div class="column-1">
           <div class="hero-title">
             <h1>Alpha Description</h1>
-            <a class="website-link" href="https://www.converse.com/shop/love-chuck" target="_blank" >
-                Visit Website</a>
+            <a
+              class="website-link"
+              href="https://www.converse.com/shop/love-chuck"
+              target="_blank"
+            >
+              Visit Website</a
+            >
           </div>
         </div>
         <div class="column-2">
@@ -115,8 +120,13 @@
             </svg>
             <h2>Triggers</h2>
             <div class="details-description">
-                <h4 class="details-subtitle">Add to Cart Button</h4>
-                <p class="microinteraction-description">To find the Add to Cart button, first open the Quick View modal for a product by clicking on the Add to Cart button in a product card. Then, you will find the Add to Cart button located on the bottom right of the Quick View modal.</p>
+              <h4 class="details-subtitle">Add to Cart Button</h4>
+              <p class="microinteraction-description">
+                To find the Add to Cart button, first open the Quick View modal
+                for a product by clicking on the Add to Cart button in a product
+                card. Then, you will find the Add to Cart button located on the
+                bottom right of the Quick View modal.
+              </p>
             </div>
           </div>
           <div class="details-row">
@@ -167,7 +177,10 @@
             <div class="details-column-1">
               <h4 class="details-column-heading">Hover On</h4>
               <div>
-                <p>The system checks whether a size has been selected to determine Add to Cart button state:</p>
+                <p>
+                  The system checks whether a size has been selected to
+                  determine Add to Cart button state:
+                </p>
                 <p>Inactive state (before size is selected)</p>
                 <ul>
                   <li>Cursor changes to pointer.</li>
@@ -176,7 +189,7 @@
                     animate.
                   </li>
                   <li>
-                    Tooltip shows “Select Color Name, Width Category and Size.”.
+                    After 2s delay, tooltip shows “Select Color Name, Width Category and Size.”.
                   </li>
                 </ul>
                 <p>Active state (after size is selected)</p>
@@ -186,8 +199,8 @@
                     Button background fades from black to white with black 1px
                     border.
                   </li>
-                  <li>Text fades from white to black.</li>
-                  <li>Tooltip shows “Add to Cart.”</li>
+                  <li>Text fades from white to dark gray.</li>
+                  <li>After 2s delay, tooltip shows “Add to Cart.”</li>
                 </ul>
               </div>
             </div>
@@ -197,9 +210,18 @@
                 <ul>
                   <li>Cursor reverts to default.</li>
                   <li>Tooltip disappears.</li>
+                </ul>
+                <p>Inactive state (before size is selected)</p>
+                <ul>
+                  <li>
+                    Button background remains black with white text and does not animate.
+                  </li>
+                </ul>
+                <p>Active state (before size is selected)</p>
+                <ul>
                   <li>
                     Button background fades from white back to black, and text
-                    fades from black to white (only if button is active).
+                    fades from dark gray to white.
                   </li>
                 </ul>
               </div>
@@ -209,13 +231,17 @@
               <div>
                 <ul>
                   <li>
-                    System checks whether a size has been selected (color and width are preselected by default).
+                    System checks whether a size has been selected (color and
+                    width are preselected by default).
                   </li>
                   <li>
-                    If no size is selected, the button action is blocked and red error text appears under the size selector.
+                    If no size is selected, the button action is blocked and red
+                    error text appears under the size selector.
                   </li>
                   <li>
-                    If a size is selected, product data is added to the cart in the backend/database. The product modal closes, and the cart modal slides in from the right.
+                    If a size is selected, product data is added to the cart in
+                    the backend/database. The product modal closes, and the cart
+                    modal slides in from the right.
                   </li>
                 </ul>
               </div>
@@ -265,7 +291,7 @@
                     animate.
                   </li>
                   <li>
-                    Tooltip shows “Select Color Name, Width Category and Size.”.
+                    After 2s delay, tooltip shows “Select Color Name, Width Category and Size.”.
                   </li>
                 </ul>
                 <p>Active state (after size is selected)</p>
@@ -275,8 +301,8 @@
                     Button background fades from black to white with black 1px
                     border.
                   </li>
-                  <li>Text fades from white to black.</li>
-                  <li>Tooltip shows “Add to Cart.”</li>
+                  <li>Text fades from white to dark gray.</li>
+                  <li>After 2s delay, tooltip shows “Add to Cart.”</li>
                 </ul>
               </div>
             </div>
@@ -286,9 +312,18 @@
                 <ul>
                   <li>Cursor reverts to default.</li>
                   <li>Tooltip disappears.</li>
+                </ul>
+                <p>Inactive state (before size is selected)</p>
+                <ul>
+                  <li>
+                    Button background remains black with white text and does not animate.
+                  </li>
+                </ul>
+                <p>Active state (before size is selected)</p>
+                <ul>
                   <li>
                     Button background fades from white back to black, and text
-                    fades from black to white (only if button is active).
+                    fades from dark gray to white.
                   </li>
                 </ul>
               </div>
@@ -346,9 +381,7 @@
             <div class="details-column-1">
               <h4 class="details-column-heading">Hover On</h4>
               <ul>
-                <li>
-                  None.
-                </li>
+                <li>None.</li>
               </ul>
             </div>
             <div class="details-column-2">
@@ -361,7 +394,10 @@
               <h4 class="details-column-heading">On Click</h4>
               <ul>
                 <li>
-                  Mode: After a successful add-to-cart action, the quick view modal closes, and the cart modal slides in from the right. The user can then close the cart modal to return to browsing products. 
+                  Mode: After a successful add-to-cart action, the quick view
+                  modal closes, and the cart modal slides in from the right. The
+                  user can then close the cart modal to return to browsing
+                  products.
                 </li>
               </ul>
             </div>
@@ -374,56 +410,56 @@
           class="microinteraction-gif"
           src="./assets/converse-microinteraction.gif"
           alt="gif of microinteraction"
-        >
-          <h2>Scroll for static images</h2>
-          <div class="microinteraction-images">
-            <div class="image-wrapper">
-              <img
-                class="microinteraction-image"
-                src="./assets/hover-off.png"
-                alt="image of add to cart button hover off"
-              >
-              <p>Hover Off</p>
-            </div>
-            <!--Hover Off-->
-            <div class="image-wrapper">
-              <img
-                class="microinteraction-image"
-                src="./assets/hover-on-inactive.png"
-                alt="image of add to cart button hover on inactive state"
-              >
-              <p>Hover On (Inactive, missing requirements)</p>
-            </div>
-            <!--Hover On Inactive-->
-            <div class="image-wrapper">
-              <img
-                class="microinteraction-image"
-                src="./assets/select-size.png"
-                alt="image of select size"
-              >
-              <p>Select Size</p>
-            </div>
-            <!--Select Size-->
-            <div class="image-wrapper">
-              <img
-                class="microinteraction-image"
-                src="./assets/loading.png"
-                alt="image of select size loading state"
-              >
-              <p>Loading</p>
-            </div>
-            <!--Loading-->
-            <div class="image-wrapper">
-              <img
-                class="microinteraction-image"
-                src="./assets/hover-on-active.png"
-                alt="image of add to cart button hover on active state"
-              >
-              <p>Hover On (Active, all requirements selected)</p>
-            </div>
-            <!--Hover On Active-->
+        />
+        <h2>Scroll for static images</h2>
+        <div class="microinteraction-images">
+          <div class="image-wrapper">
+            <img
+              class="microinteraction-image"
+              src="./assets/hover-off.png"
+              alt="image of add to cart button hover off"
+            />
+            <p>Hover Off</p>
           </div>
+          <!--Hover Off-->
+          <div class="image-wrapper">
+            <img
+              class="microinteraction-image"
+              src="./assets/hover-on-inactive.png"
+              alt="image of add to cart button hover on inactive state"
+            />
+            <p>Hover On (Inactive, missing requirements)</p>
+          </div>
+          <!--Hover On Inactive-->
+          <div class="image-wrapper">
+            <img
+              class="microinteraction-image"
+              src="./assets/select-size.png"
+              alt="image of select size"
+            />
+            <p>Select Size</p>
+          </div>
+          <!--Select Size-->
+          <div class="image-wrapper">
+            <img
+              class="microinteraction-image"
+              src="./assets/loading.png"
+              alt="image of select size loading state"
+            />
+            <p>Loading</p>
+          </div>
+          <!--Loading-->
+          <div class="image-wrapper">
+            <img
+              class="microinteraction-image"
+              src="./assets/hover-on-active.png"
+              alt="image of add to cart button hover on active state"
+            />
+            <p>Hover On (Active, all requirements selected)</p>
+          </div>
+          <!--Hover On Active-->
         </div>
+      </div>
     </main>
     <footer>
       <p>© 2025 Shannon Jaya</p>
