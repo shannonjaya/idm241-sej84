@@ -126,17 +126,25 @@ header {
   height: 100%;
 }
 
-  .hero-subtitle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: calc(var(--rhythm)*0.3);
-  }
-
 .hero-logo {
   height: 100%;
   width: auto;
 }
+
+.website-link {
+  text-decoration: underline;
+}
+
+.details-description {
+  display: flex;
+  gap: calc(var(--rhythm)*0.1);
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(var(--rhythm)*0.5);
+  text-align: center;
+  max-width: 600px;
+}
+
 
 .details-row {
   display: flex;
