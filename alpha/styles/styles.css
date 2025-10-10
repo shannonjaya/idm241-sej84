@@ -114,7 +114,6 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0 var(--rhythm);
-  border-bottom: var(--gray) 1px solid;
 }
 
 
@@ -173,12 +172,8 @@ header {
   margin: 0;
 }
 
-details {
-  display: flex;
-  flex-direction: column;
-  padding: calc(var(--rhythm)*5) calc(var(--rhythm)*12);
-  text-align: center;
-  width: 100%;
+.details-section, .details {
+  border-top: var(--gray) 1px solid;
 }
 
 .details-column-heading {
@@ -276,7 +271,6 @@ footer {
   .details {
     padding: calc(var(--rhythm)*2) var(--rhythm);
     gap: calc(var(--rhythm)*2);
-    border-bottom: var(--gray) 1px solid;
   }
 
   .details-heading {
@@ -293,4 +287,52 @@ footer {
     overflow-x: auto;
     gap: calc(var(--rhythm)*2);
   }
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: calc(var(--rhythm)*2);
+  margin: 0 calc(var(--rhythm)*10);
+  margin-top: calc(var(--rhythm)*2);
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--rhythm)*0.5);
+  width: 100%;
+}
+
+.button {
+  background-color: var(--black);
+  border: 1px solid var(--black);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: calc(var(--rhythm)*0.75) calc(var(--rhythm)*2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: var(--white);
+  color: var(--dark-gray);  
+  border: 1px solid var(--black);
+  transition: background-color 0.3s ease;
+}
+
+#inactive-button:hover {
+  background-color: var(--black);
+  border: 1px solid var(--black);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: calc(var(--rhythm)*0.75) calc(var(--rhythm)*2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
 }
