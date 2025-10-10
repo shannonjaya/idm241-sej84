@@ -95,8 +95,8 @@
       <div class="details-section">
         <div class="microinteraction-section">
           <h2>Add to Cart Button</h2>
-          <div class="buttons-container">
-            <div class="button-wrapper">
+          <div class="button-container">
+            <!-- <div class="button-wrapper">
                 <a
                   class="button"
                   id="inactive-button"
@@ -105,8 +105,7 @@
                   Add to Cart
                 </a>
                 <p>Inactive State (Size isn't selected)</p>
-            </div>
-            <div class="button-wrapper">
+            </div> -->
               <a
                 href="https://www.converse.com/shop-cart"
                 target="_blank"
@@ -116,8 +115,6 @@
               >
                 Add to Cart
               </a>
-              <p>Active State (Size is selected)</p>
-            </div>
           </div>
         </div>
         <div class="details">
@@ -199,7 +196,7 @@
             <div class="details-column-1">
               <h4 class="details-column-heading">Hover On</h4>
               <div>
-                <p>
+                <!-- <p>
                   The system checks whether a size has been selected to
                   determine Add to Cart button state:
                 </p>
@@ -214,7 +211,7 @@
                     Tooltip shows “Select Color Name, Width Category and Size.”.
                   </li>
                 </ul>
-                <p>Active state (after size is selected)</p>
+                <p>Active state (after size is selected)</p> -->
                 <ul>
                   <li>Cursor changes to pointer.</li>
                   <li>
@@ -234,7 +231,7 @@
                   <li>Tooltip disappears.</li>
                   <li>
                     Button background fades from white back to black, and text
-                    fades from black to white (only if button is active).
+                    fades from black to white.
                   </li>
                 </ul>
               </div>
@@ -243,18 +240,16 @@
               <h4 class="details-column-heading">On Click</h4>
               <div>
                 <ul>
-                  <li>
+                  <!-- <li>
                     System checks whether a size has been selected (color and
                     width are preselected by default).
                   </li>
                   <li>
-                    If no size is selected, the button action is blocked and red
-                    error text appears under the size selector.
-                  </li>
+                    If no size is selected, the button action is blocked and nothing happens.
+                  </li> -->
+                  <li>Browser navigates to the cart page in new tab.</li>
                   <li>
-                    If a size is selected, product data is added to the cart in
-                    the backend/database. The product modal closes, and the cart
-                    modal slides in from the right.
+                    Product data is added to the cart in the backend/database.
                   </li>
                 </ul>
               </div>
@@ -296,7 +291,7 @@
             <div class="details-column-1">
               <h4 class="details-column-heading">Hover On</h4>
               <div>
-                <p>Inactive state (before size is selected)</p>
+                <!-- <p>Inactive state (before size is selected)</p>
                 <ul>
                   <li>Cursor changes to pointer.</li>
                   <li>
@@ -307,7 +302,7 @@
                     Tooltip shows “Select Color Name, Width Category and Size.”.
                   </li>
                 </ul>
-                <p>Active state (after size is selected)</p>
+                <p>Active state (after size is selected)</p> -->
                 <ul>
                   <li>Cursor changes to pointer.</li>
                   <li>
@@ -327,7 +322,7 @@
                   <li>Tooltip disappears.</li>
                   <li>
                     Button background fades from white back to black, and text
-                    fades from black to white (only if button is active).
+                    fades from black to white.
                   </li>
                 </ul>
               </div>
@@ -336,14 +331,11 @@
               <h4 class="details-column-heading">On Click</h4>
               <div>
                 <ul>
-                  <li>
+                  <!-- <li>
                     If a required option is not selected (size), red error text
                     appears under the size selector.
-                  </li>
-                  <li>
-                    If a size is selected, the modal closes and the cart modal
-                    slides in from the right.
-                  </li>
+                  </li> -->
+                  <li>Browser navigates to the cart page in new tab.</li>
                 </ul>
               </div>
             </div>
@@ -397,12 +389,7 @@
             <div class="details-column-3">
               <h4 class="details-column-heading">On Click</h4>
               <ul>
-                <li>
-                  Mode: After a successful add-to-cart action, the quick view
-                  modal closes, and the cart modal slides in from the right. The
-                  user can then close the cart modal to return to browsing
-                  products.
-                </li>
+                <li>None.</li>
               </ul>
             </div>
           </div>

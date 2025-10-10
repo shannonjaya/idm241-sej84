@@ -124,7 +124,7 @@
               <h4 class="details-subtitle">Add to Cart Button</h4>
               <p class="microinteraction-description">
                 To find the Add to Cart button, first open the Quick View modal
-                for a product by clicking on the Add to Cart button in a product
+                for a product by clicking on the Add to Cart option in a product
                 card. Then, you will find the Add to Cart button located on the
                 bottom right of the Quick View modal.
               </p>
@@ -178,11 +178,11 @@
             <div class="details-column-1">
               <h4 class="details-column-heading">Hover On</h4>
               <div>
-                <p>
+                <!-- <p>
                   The system checks whether a size has been selected to
                   determine Add to Cart button state:
-                </p>
-                <p>Inactive state (before size is selected)</p>
+                </p> -->
+                <!-- <p>Inactive state (before size is selected)</p>
                 <ul>
                   <li>Cursor changes to pointer.</li>
                   <li>
@@ -193,8 +193,8 @@
                     After 2s delay, tooltip shows “Select Color Name, Width
                     Category and Size.”.
                   </li>
-                </ul>
-                <p>Active state (after size is selected)</p>
+                </ul> -->
+                <!-- <p>Active state (after size is selected)</p> -->
                 <ul>
                   <li>Cursor changes to pointer.</li>
                   <li>
@@ -209,7 +209,7 @@
             <div class="details-column-2">
               <h4 class="details-column-heading">Hover Off</h4>
               <div>
-                <p>Inactive state (before size is selected)</p>
+                <!-- <p>Inactive state (before size is selected)</p>
                 <ul>
                   <li>Cursor reverts to default.</li>
                   <li>Tooltip disappears.</li>
@@ -218,7 +218,7 @@
                     animate.
                   </li>
                 </ul>
-                <p>Active state (before size is selected)</p>
+                <p>Active state (before size is selected)</p> -->
                 <ul>
                   <li>Cursor reverts to default.</li>
                   <li>Tooltip disappears.</li>
@@ -233,18 +233,20 @@
               <h4 class="details-column-heading">On Click</h4>
               <div>
                 <ul>
-                  <li>
+                  <!-- <li>
                     System checks whether a size has been selected (color and
                     width are preselected by default).
                   </li>
                   <li>
                     If no size is selected, the button action is blocked and red
                     error text appears under the size selector.
+                  </li> -->
+                  <li>
+                    The product modal closes, and the cart modal slides in from
+                    the right.
                   </li>
                   <li>
-                    If a size is selected, product data is added to the cart in
-                    the backend/database. The product modal closes, and the cart
-                    modal slides in from the right.
+                    Product data is added to the cart in the backend/database.
                   </li>
                 </ul>
               </div>
@@ -286,7 +288,7 @@
             <div class="details-column-1">
               <h4 class="details-column-heading">Hover On</h4>
               <div>
-                <p>Inactive state (before size is selected)</p>
+                <!-- <p>Inactive state (before size is selected)</p>
                 <ul>
                   <li>Cursor changes to pointer.</li>
                   <li>
@@ -298,7 +300,7 @@
                     Category and Size.”.
                   </li>
                 </ul>
-                <p>Active state (after size is selected)</p>
+                <p>Active state (after size is selected)</p> -->
                 <ul>
                   <li>Cursor changes to pointer.</li>
                   <li>
@@ -313,7 +315,7 @@
             <div class="details-column-2">
               <h4 class="details-column-heading">Hover Off</h4>
               <div>
-                <p>Inactive state (before size is selected)</p>
+                <!-- <p>Inactive state (before size is selected)</p>
                 <ul>
                   <li>Cursor reverts to default.</li>
                   <li>Tooltip disappears.</li>
@@ -322,7 +324,7 @@
                     animate.
                   </li>
                 </ul>
-                <p>Active state (before size is selected)</p>
+                <p>Active state (before size is selected)</p> -->
                 <ul>
                   <li>Cursor reverts to default.</li>
                   <li>Tooltip disappears.</li>
@@ -338,12 +340,8 @@
               <div>
                 <ul>
                   <li>
-                    If no size is selected, button action is blocked and red
-                    error text appears under size selector.
-                  </li>
-                  <li>
-                    If a size is selected, the modal closes and the cart modal
-                    slides in from the right.
+                    The product modal closes, and the cart modal slides in from
+                    the right.
                   </li>
                 </ul>
               </div>
@@ -415,7 +413,7 @@
             src="./assets/converse-microinteraction.gif"
             alt="gif of microinteraction"
           />
-          <h2>Scroll for static images</h2>
+          <h2>Static images</h2>
           <div class="microinteraction-images">
             <div class="image-wrapper">
               <img
@@ -425,7 +423,7 @@
               />
               <p>Hover Off</p>
             </div>
-            <!--Hover Off-->
+            <!-- Hover Off
             <div class="image-wrapper">
               <img
                 class="microinteraction-image"
@@ -433,9 +431,9 @@
                 alt="image of add to cart button hover on inactive state"
               />
               <p>Hover On (Inactive, missing requirements)</p>
-            </div>
+            </div> -->
             <!--Hover On Inactive-->
-            <div class="image-wrapper">
+            <!-- <div class="image-wrapper">
               <img
                 class="microinteraction-image"
                 src="./assets/select-size.png"
@@ -443,7 +441,7 @@
               />
               <p>Select Size</p>
             </div>
-            <!--Select Size-->
+            Select Size
             <div class="image-wrapper">
               <img
                 class="microinteraction-image"
@@ -452,14 +450,14 @@
               />
               <p>Loading</p>
             </div>
-            <!--Loading-->
+            Loading -->
             <div class="image-wrapper">
               <img
                 class="microinteraction-image"
                 src="./assets/hover-on-active.png"
                 alt="image of add to cart button hover on active state"
               />
-              <p>Hover On (Active, all requirements selected)</p>
+              <p>Hover On</p>
             </div>
             <!--Hover On Active-->
           </div>
