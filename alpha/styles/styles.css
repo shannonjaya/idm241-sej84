@@ -152,6 +152,7 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   border-top: var(--gray) 1px solid;
+  justify-content: center;
 }
 
 .details-heading {
@@ -235,7 +236,7 @@ header {
 .button-container {
   display: flex;
   justify-content: center;
-  margin: 0 calc(var(--rhythm) * 20);
+  /* margin: 0 calc(var(--rhythm) * 20); */
   margin-top: calc(var(--rhythm) * 1);
 }
 
@@ -250,6 +251,7 @@ header {
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 100%;
+  max-width: 500px;
 }
 
 .button:hover {
