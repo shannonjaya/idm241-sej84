@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDM-241 | Shannon Jaya | Beta</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/syp8ril.css" />
+  </head>
+
+  <body>
+    <header>
+      <a
+        class="logo-link"
+        href="https://www.benefitcosmetics.com/en-us/lips/lip-stain"
+      >
+        <img
+          class="header-logo"
+          src="./assets/logo.svg"
+          alt="Benefit Cosmetics Logo"
+        />
+      </a>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="hero-title">
+          <h4>Benefit Cosmetics</h4>
+          <h1>Beta Description</h1>
+          <a
+            class="website-link"
+            href="https://www.benefitcosmetics.com/en-us/lips/lip-stain"
+            target="_blank"
+          >
+            Link to original interface</a
+          >
+        </div>
+      </div>
+
+      <div class="details-section">
+        <div class="details">
+          <!--Triggers-->
+          <div class="details-heading">
+            <svg
+              class="details-icon"
+              width="51"
+              height="50"
+              viewBox="0 0 51 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="51"
+                height="50"
+              >
+                <rect x="0.5" width="50" height="50" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_157_265)">
+                <path
+                  d="M5.5 24.8958V23.8542H11.75V24.8958H5.5ZM12.2188 36.4583L11.4375 35.7812L15.8646 31.4062L16.5417 32.1354L12.2188 36.4583ZM15.8646 16.1458L11.4375 11.7187L12.2188 11.0417L16.4896 15.3646L15.8646 16.1458ZM36.6458 38.4375L27.5312 29.3229L25.6042 34.4792L21.5417 21.9792L34.25 26.0417L28.9896 28.0729L38 37.0833L36.6458 38.4375ZM23.3125 13.75V7.5H24.3542V13.75H23.3125ZM30.5521 16.0937L29.875 15.3646L34.1979 11.0417L34.9792 11.8229L30.5521 16.0937Z"
+                  fill="black"
+                />
+              </g>
+            </svg>
+            <h2>Triggers</h2>
+          </div>
+          <p class="details-intro">
+            To find the objects described below, first hover over a product card
+            and click the “Choose Shade” button. This will open a new modal in
+            which you’ll find the following:
+          </p>
+          <div class="details-row">
+            <div class="details-column">
+              <h4 class="details-column-heading">Select a Shade Button(s)</h4>
+              <ul>
+                <li>Hover On</li>
+                <li>Hover Off</li>
+                <li>On Click</li>
+              </ul>
+            </div>
+            <div class="details-column">
+              <h4 class="details-column-heading">Size Button(s)</h4>
+              <ul>
+                <li>Hover On</li>
+                <li>Hover Off</li>
+                <li>On Click</li>
+              </ul>
+            </div>
+            <div class="details-column">
+              <h4 class="details-column-heading">Add to Bag Button</h4>
+              <ul>
+                <li>Hover On</li>
+                <li>Hover Off</li>
+                <li>On Click</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <!--Rules-->
+          <div class="details-heading">
+            <svg
+              class="details-icon"
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="50"
+                height="50"
+              >
+                <rect width="50" height="50" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_157_465)">
+                <path
+                  d="M9 41.125V40.0833H28.7917V41.125H9ZM20.4583 29.3021L11.7083 20.6042L14.2604 18.0521L22.9583 26.8021L20.4583 29.3021ZM30.5104 19.25L21.8125 10.5521L24.3125 8L33.0625 16.75L30.5104 19.25ZM41.0312 38.1042L17.5938 14.6667L18.375 13.8854L41.8125 37.3229L41.0312 38.1042Z"
+                  fill="black"
+                />
+              </g>
+            </svg>
+            <h2>Rules</h2>
+          </div>
+          <div class="details-row">
+            <div class="details-column">
+              <h4 class="details-column-heading">Select a Shade Button(s)</h4>
+              <ul>
+                <li>
+                  Hover On
+                  <ul>
+                    <li>Cursor changes to pointer.</li>
+                    <li>Button slightly scales up to about 1.05 over 300ms with ease transition.</li>
+                  </ul>
+                </li>
+                <li>
+                  Hover Off
+                  <ul>
+                    <li>Cursor returns to default.</li>
+                    <li>Button smoothly scales back to normal size.</li>
+                  </ul>
+                </li>
+                <li>
+                  On Click
+                  <ul>
+                    <li>A 2px white inner ring fades in quickly (about 200ms) to indicate selection.</li>
+                    <li>Any previously selected shade ring fades out.</li>
+                    <li>Only one shade can be active at a time.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="details-column">
+              <h4 class="details-column-heading">Size Button(s)</h4>
+              <ul>
+                <li>
+                  Hover On
+                  <ul>
+                    <li>Cursor changes to pointer.</li>
+                    <li>Button’s gray border transitions to black.</li>
+                    <li>Button scales up slightly to about 1.02 over ~300ms (ease).</li>
+                  </ul>
+                </li>
+                <li>
+                  Hover Off
+                  <ul>
+                    <li>Cursor returns to default.</li>
+                    <li>Border transitions back to gray.</li>
+                    <li>Button smoothly scales back down to 1.00.</li>
+                  </ul>
+                </li>
+                <li>
+                  On Click
+                  <ul>
+                    <li>Button scales back down to 1.00 while keeping the black border.</li>
+                    <li>Any previously selected size resets to default.</li>
+                    <li>Selected size is stored in the database for the Add to Bag action.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="details-column">
+              <h4 class="details-column-heading">Add to Bag Button</h4>
+              <ul>
+                <li>
+                  Hover On
+                  <ul>
+                    <li>Cursor changes to pointer.</li>
+                    <li>A pink colored overlay sweeps across the button from left to right over ~500ms with ease transition.</li>
+                  </ul>
+                </li>
+                <li>
+                  Hover Off
+                  <ul>
+                    <li>Cursor returns to default.</li>
+                    <li>Pink overlay retracts leftward over ~500ms with ease transition.</li>
+                  </ul>
+                </li>
+                <li>
+                  On Click
+                  <ul>
+                    <li>The button text animates with staggered letters for ~500ms, transitioning to “Added.”</li>
+                    <li>The button temporarily disables to prevent multiple clicks.</li>
+                    <li>After roughly 5 seconds, the button automatically resets to default state.</li>
+                    <li>Product details (selected shade and size) are added to the database.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <!--Feedback-->
+          <div class="details-heading">
+            <svg
+              class="details-icon"
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="50"
+                height="50"
+              >
+                <rect width="50" height="50" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_157_584)">
+                <path
+                  d="M12.3438 43.6458C14.2535 43.6458 15.7205 42.9513 16.7448 41.5624C17.7691 40.1735 18.559 38.6284 19.1146 36.927C19.5313 35.6076 20.1128 34.3142 20.8594 33.0468C21.6059 31.7794 22.7778 30.7117 24.375 29.8437C26.5972 28.6978 28.2726 27.0919 29.401 25.026C30.5295 22.96 31.0938 20.8506 31.0938 18.6978C31.0938 15.2256 29.8958 12.3003 27.5 9.92179C25.1042 7.54332 22.1701 6.35409 18.6979 6.35409C15.434 6.35409 12.6389 7.40443 10.3125 9.50513C7.98611 11.6058 6.68403 14.236 6.40625 17.3958H7.44792C7.72569 14.5138 8.94097 12.1267 11.0938 10.2343C13.2465 8.34193 15.7813 7.39575 18.6979 7.39575C21.8229 7.39575 24.4965 8.49818 26.7188 10.703C28.941 12.9079 30.0521 15.5728 30.0521 18.6978C30.0521 20.677 29.4705 22.6301 28.3073 24.5572C27.1441 26.4843 25.7465 27.8819 24.1146 28.7499C22.1701 29.7569 20.8854 30.8159 20.2604 31.927C19.6354 33.0381 18.8368 34.9131 17.8646 37.552C17.1701 39.2534 16.3455 40.5208 15.3906 41.3541C14.4358 42.1874 13.4201 42.6041 12.3438 42.6041C11.2326 42.6041 10.2344 42.2482 9.34896 41.5364C8.46354 40.8246 7.86458 39.9305 7.55208 38.8541H6.40625C6.71875 40.243 7.41319 41.3888 8.48958 42.2916C9.56597 43.1944 10.8507 43.6458 12.3438 43.6458ZM18.6979 22.7083C19.809 22.7083 20.7465 22.335 21.5104 21.5885C22.2743 20.8419 22.6562 19.8958 22.6562 18.7499C22.6562 17.6388 22.2743 16.7013 21.5104 15.9374C20.7465 15.1735 19.809 14.7916 18.6979 14.7916C17.5868 14.7916 16.6493 15.1735 15.8854 15.9374C15.1215 16.7013 14.7396 17.6388 14.7396 18.7499C14.7396 19.8958 15.1215 20.8419 15.8854 21.5885C16.6493 22.335 17.5868 22.7083 18.6979 22.7083ZM37.3438 28.2291L36.4583 27.3958C36.8056 26.2499 37.0833 25.0607 37.2917 23.828C37.5 22.5954 37.6042 21.3194 37.6042 19.9999C37.6042 18.4374 37.4392 16.9183 37.1094 15.4426C36.7795 13.9669 36.3368 12.552 35.7812 11.1978L36.6146 10.4687C37.2396 11.8923 37.7344 13.4027 38.099 14.9999C38.4635 16.5971 38.6458 18.2638 38.6458 19.9999C38.6458 21.4583 38.533 22.8645 38.3073 24.2187C38.0816 25.5728 37.7604 26.9096 37.3438 28.2291Z"
+                  fill="black"
+                />
+              </g>
+            </svg>
+            <h2>Feedback</h2>
+          </div>
+          <div class="details-row">
+            <div class="details-column">
+              <h4 class="details-column-heading">Select a Shade Button(s)</h4>
+              <ul>
+                <li>
+                  Hover On
+                  <ul>
+                    <li>Cursor changes to pointer.</li>
+                    <li>Button slightly scales up to about 1.05 over 300ms with ease transition.</li>
+                  </ul>
+                </li>
+                <li>
+                  Hover Off
+                  <ul>
+                    <li>Cursor returns to default.</li>
+                    <li>Button smoothly scales back to normal size.</li>
+                  </ul>
+                </li>
+                <li>
+                  On Click
+                  <ul>
+                    <li>A 2px white inner ring fades in quickly (about 200ms) to indicate selection.</li>
+                    <li>Any previously selected shade ring fades out.</li>
+                    <li>Only one shade can be active at a time.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="details-column">
+              <h4 class="details-column-heading">Size Button(s)</h4>
+              <ul>
+                <li>
+                  Hover On
+                  <ul>
+                    <li>Cursor changes to pointer.</li>
+                    <li>Button’s gray border transitions to black.</li>
+                    <li>Button scales up slightly to about 1.02 over ~300ms with ease transition.</li>
+                  </ul>
+                </li>
+                <li>
+                  Hover Off
+                  <ul>
+                    <li>Cursor returns to default.</li>
+                    <li>Border transitions back to gray.</li>
+                    <li>Button smoothly scales back down to 1.00.</li>
+                  </ul>
+                </li>
+                <li>
+                  On Click
+                  <ul>
+                    <li>Button scales back down to 1.00 while keeping the black border.</li>
+                    <li>Any previously selected size resets to default.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="details-column">
+              <h4 class="details-column-heading">Add to Bag Button</h4>
+              <ul>
+                <li>
+                  Hover On
+                  <ul>
+                    <li>Cursor changes to pointer.</li>
+                    <li>A pink colored overlay sweeps across the button from left to right over ~500ms with ease transition.</li>
+                  </ul>
+                </li>
+                <li>
+                  Hover Off
+                  <ul>
+                    <li>Cursor returns to default.</li>
+                    <li>Pink overlay retracts leftward over ~500ms with ease transition.</li>
+                  </ul>
+                </li>
+                <li>
+                  On Click
+                  <ul>
+                    <li>The button text animates with staggered letters for ~500ms, transitioning to “Added.”</li>
+                    <li>The button temporarily disables to prevent multiple clicks.</li>
+                    <li>After roughly 5 seconds, the button automatically resets to default state.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <!--Loops & Modes-->
+          <div class="details-heading">
+            <svg
+              class="details-icon"
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="50"
+                height="50"
+              >
+                <rect width="50" height="50" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_157_614)">
+                <path
+                  d="M25 38.6458C21.2153 38.6458 17.9688 37.2916 15.2604 34.5833C12.5521 31.875 11.25 28.5763 11.3542 24.6875V21.4062L7.03125 25.7291L6.25 24.9479L11.875 19.3229L17.5 24.9479L16.7188 25.7291L12.3958 21.4062V24.6875C12.3264 28.3333 13.533 31.3975 16.0156 33.8802C18.4983 36.3628 21.4931 37.6041 25 37.6041C25.6597 37.6041 26.3281 37.5607 27.0052 37.4739C27.6823 37.3871 28.3333 37.2569 28.9583 37.0833L29.6875 37.8125C29.0278 38.0208 28.2986 38.2118 27.5 38.3854C26.7014 38.559 25.8681 38.6458 25 38.6458ZM38.125 30.677L32.5 25.052L33.2812 24.2708L37.6042 28.5937V25.3125C37.6736 21.6666 36.467 18.6024 33.9844 16.1198C31.5017 13.6371 28.5069 12.3958 25 12.3958C24.375 12.3958 23.7153 12.4392 23.0208 12.526C22.3264 12.6128 21.6667 12.743 21.0417 12.9166L20.3125 12.1875C20.9722 11.9791 21.7101 11.7882 22.526 11.6145C23.342 11.4409 24.1667 11.3541 25 11.3541C28.8194 11.3541 32.0747 12.7083 34.7656 15.4166C37.4566 18.125 38.75 21.4236 38.6458 25.3125V28.5937L42.9688 24.2708L43.75 25.052L38.125 30.677Z"
+                  fill="black"
+                />
+              </g>
+            </svg>
+            <h2>Loops & Modes</h2>
+          </div>
+          <p>None.</p>
+        </div>
+      </div>
+
+      <div class="microinteraction-section">
+        <h2>Animated GIF</h2>
+        <div class="microinteraction-wrapper">
+          <h4>Select a Shade Button(s)</h4>
+          <img
+            class="microinteraction-gif"
+            src="./assets/color-btns.gif"
+            alt="Select a Shade Button Microinteraction"
+          >
+          <!-- <div class="color-palette">
+            <button
+              class="color-btn"
+              style="background-color: #c70202"
+            ></button>
+            <button
+              class="color-btn"
+              style="background-color: #ce004b"
+            ></button>
+            <button
+              class="color-btn"
+              style="background-color: #801700"
+            ></button>
+          </div> -->
+        </div>
+        <div class="microinteraction-wrapper">
+          <h4>Select a Size Button(s)</h4>
+          <img
+            class="microinteraction-gif"
+            src="./assets/size-btns.gif"
+            alt="Select a Size Button Microinteraction"
+          >
+          <!-- <div class="size-selection">
+            <button class="size-btn">
+              Full Size <strong>$28.00</strong><br />
+              6.0 mL / 0.2 US fl. oz.
+            </button>
+            <button class="size-btn">
+              Value Size <strong>$36.00</strong><br />
+              10.0 mL / 0.33 US fl. oz.
+            </button>
+          </div> -->
+        </div>
+        <div class="microinteraction-wrapper">
+          <h4>Add to Bag Button</h4>
+          <img
+            class="microinteraction-gif"
+            src="./assets/add-to-bag-btn.gif"
+            alt="Add to Bag Button Microinteraction"
+          >
+          <!-- <button class="add-to-bag-btn">
+            <span class="btn-label">Add to Bag</span>
+          </button> -->
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Shannon Jaya</p>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
