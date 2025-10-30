@@ -222,6 +222,11 @@ footer {
   padding-bottom: calc(var(--rhythm) * 1);
 }
 
+.microinteraction-wrapper:last-child  {
+  padding-top: calc(var(--rhythm) * 1);
+  border-bottom: none;
+}
+
 .microinteraction-gif {
   width: 100%;
   max-width: 600px;
