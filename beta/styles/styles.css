@@ -95,6 +95,10 @@ h3 {
   color: var(--gray);
 }
 
+.hero-title > h4 {
+  margin-bottom: calc(var(--rhythm) * 0.4);
+}
+
 h4 {
   font-family: var(--font-sans-narrow);
   font-weight: 700;
