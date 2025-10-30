@@ -68,6 +68,7 @@ h1,
 h2 {
   font-family: var(--font-serif);
   font-weight: 900;
+  text-align: center;
 }
 
 h1 {
@@ -89,6 +90,7 @@ h3 {
   letter-spacing: 0.02rem;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
 }
 
 .hero-title > h3 {
@@ -97,6 +99,7 @@ h3 {
 
 .hero-title > h4 {
   margin-bottom: calc(var(--rhythm) * 0.4);
+  text-align: center;
 }
 
 h4 {
@@ -108,6 +111,7 @@ h4 {
   margin: 0;
   text-transform: uppercase;
   color: var(--primary);
+  text-align: center;
 }
 
 p {
@@ -235,15 +239,19 @@ footer {
 /* Color Button Styles */
 .color-palette {
   display: flex;
-  gap: calc(var(--rhythm) * 2);
+  flex-direction: row;
+  gap: var(--rhythm)calc(var(--rhythm) * 2);
   padding: calc(var(--rhythm) * 1);
+  width: 100%;
+  justify-content: center;
 }
 
 .color-btn {
   border: none;
   border-radius: 100%;
-  width: 100px;
-  height: 100px;
+  aspect-ratio: 1 / 1;
+  width: 20%;
+  height: auto;
   cursor: pointer;
   transition: scale 0.3s ease;
   position: relative;
@@ -276,8 +284,10 @@ footer {
 
 .size-selection {
   display: flex;
-  gap: calc(var(--rhythm) * 2);
+  gap: var(--rhythm) calc(var(--rhythm) * 1);
   padding: calc(var(--rhythm) * 1);
+  width: 100%;
+  justify-content: center;
 }
 
 .size-btn {
@@ -294,6 +304,8 @@ footer {
     border-color 200ms ease,
     background-size 300ms ease,
     color 200ms ease;
+  text-align: center;
+  width: 50%;
 }
 
 .size-btn:hover {
@@ -435,5 +447,25 @@ footer {
 
   .add-to-bag-btn {
     width: 100%;
+  }
+
+  .color-palette {
+     gap: calc(var(--rhythm) * 1);
+  }
+
+  .size-btn {
+    width: 100%;
+  }
+  
+  .size-selection {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 300px) {
+  .color-palette {
+    flex-direction: column;
+    gap: calc(var(--rhythm) * 0.5);
+    align-items: center;
   }
 }
