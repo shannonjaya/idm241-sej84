@@ -218,6 +218,8 @@ footer {
   align-items: center;
   gap: calc(var(--rhythm) * 1);
   width: 100%;
+  border-bottom: 1px solid var(--dark-gray);
+  padding-bottom: calc(var(--rhythm) * 1);
 }
 
 .microinteraction-gif {
