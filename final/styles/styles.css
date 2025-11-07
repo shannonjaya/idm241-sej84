@@ -279,12 +279,27 @@ hr {
 
 .product-image-carousel {
   width: 50%;
+  position: relative; 
 }
 
 .product-image-carousel img {
   width: 100%;
   height: auto;
   border-radius: 20px;
+  display: block;
+}
+
+/* Crossfade overlay for product image */
+.product-image-carousel .image-fade-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 300ms ease;
 }
 
 .product-details {
@@ -304,6 +319,26 @@ hr {
   text-align: left;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.payment-info {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--rhythm) * 0.2);
+}
+
+.klarna-logo {
+  height: 32px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.learn-more {
+  text-decoration: underline;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary);
 }
 
 /* Color Button Styles */
@@ -348,6 +383,22 @@ hr {
 
 .color-btn.is-selected:hover {
   scale: 1;
+}
+
+.selected-shade {
+  position: relative;
+  display: inline-block;
+  transition: opacity 250ms ease;
+  opacity: 1;
+}
+
+@keyframes shadeFadeIn {
+  from { opacity: 0.5; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.selected-shade.is-fading {
+  animation: shadeFadeIn 300ms ease;
 }
 
 /* Size Button Styles */
