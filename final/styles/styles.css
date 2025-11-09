@@ -198,9 +198,9 @@ header {
 .details-row {
   margin-top: calc(var(--rhythm) * 2);
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   flex-wrap: wrap;
-  gap: calc(var(--rhythm) * 1.5);
+  gap: calc(var(--rhythm) * 1.5) calc(var(--rhythm)*3);
 }
 
 footer {
@@ -551,6 +551,7 @@ hr {
 .view-full-details:hover {
   cursor: pointer;
   transform: translateY(-2px);
+  color: var(--primary);
 }
 
 /* Responsive Styles */
