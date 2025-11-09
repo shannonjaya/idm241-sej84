@@ -226,12 +226,13 @@ footer {
   gap: calc(var(--rhythm) * 1);
   width: 100%;
   border-bottom: 1px solid var(--dark-gray);
-  padding-bottom: calc(var(--rhythm) * 1);
+  padding-bottom: calc(var(--rhythm) * 3);
 }
 
-.microinteraction-wrapper:last-child {
-  padding-top: calc(var(--rhythm) * 1);
-  border-bottom: none;
+.microinteraction-video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
 }
 
 .quick-view-modal {
