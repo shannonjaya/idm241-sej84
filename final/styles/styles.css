@@ -61,6 +61,7 @@ body {
 
 main {
   margin: var(--rhythm) calc(var(--rhythm) * 15);
+  max-width: 1440px;
 }
 
 /* Text Styles */
@@ -325,6 +326,7 @@ hr {
   display: flex;
   align-items: center;
   gap: calc(var(--rhythm) * 0.2);
+  flex-wrap: wrap;
 }
 
 .klarna-logo {
@@ -355,7 +357,7 @@ hr {
   border: none;
   border-radius: 100%;
   aspect-ratio: 1 / 1;
-  width: 7%;
+  width: 48px;
   height: auto;
   cursor: pointer;
   transition: scale 0.3s ease;
@@ -536,6 +538,7 @@ hr {
   align-items: center;
   gap: calc(var(--rhythm) * 1);
   margin-top: calc(var(--rhythm) * 1);
+  flex-wrap: wrap;
 }
 
 .view-full-details {
@@ -546,6 +549,7 @@ hr {
   text-transform: uppercase;
   text-decoration: underline;
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 .view-full-details:hover {
@@ -555,6 +559,13 @@ hr {
 }
 
 /* Responsive Styles */
+@media (min-width: 1700px) {
+  .quick-view-modal {
+    width: 120%;
+  }
+
+}
+
 @media (max-width: 1300px) {
   main {
     margin: var(--rhythm) calc(var(--rhythm) * 2);
@@ -562,6 +573,31 @@ hr {
 
   h1,
   h2 {
+    text-align: center;
+  }
+
+  .quick-view-modal {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .modal-row {
+    flex-direction: column;
+    margin: 0 calc(var(--rhythm) * 1);
+  }
+
+  .quick-view-modal {
+    width: 100%;
+  }
+
+  .product-image-carousel,
+  .product-details, .add-to-bag-btn{
+    width: 100%;
+  }
+
+  .view-full-details {
+    width: 100%;
     text-align: center;
   }
 }
