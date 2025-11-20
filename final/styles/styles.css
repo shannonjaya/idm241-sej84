@@ -283,7 +283,7 @@ hr {
   position: relative; 
 }
 
-.product-image-carousel img {
+.product-image-carousel img, .image-fade-overlay {
   width: 100%;
   height: auto;
   border-radius: 20px;
@@ -295,7 +295,7 @@ hr {
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 100%;
+  height: fit;
   object-fit: cover;
   border-radius: 20px;
   pointer-events: none;
