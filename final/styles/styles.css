@@ -250,7 +250,7 @@ footer {
 }
 
 .close-icon {
-  cursor: pointer;
+  cursor: default;
   transition: all 0.3s ease;
 }
 
@@ -300,7 +300,7 @@ hr {
   border-radius: 20px;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 300ms ease;
+  transition: opacity 500ms ease;
 }
 
 .product-details {
