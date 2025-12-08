@@ -46,11 +46,9 @@
           <div class="text-wrapper">
             <h4 class="details-column-heading">Project Background</h4>
             <p>
-              Benefit’s quick-view modal lets shoppers choose a shade and size,
-              then add it to their bag. In the original design, several
-              interactions felt abrupt or unclear, especially when switching
-              shades or confirming an “add” action.
+              Benefit Cosmetics is a popular makeup brand, and for this project I focused specifically on their website’s quick-view modal. This component lets users choose a shade and size before adding the product to their bag, but many of the original interactions were abrupt or unclear. I aimed to improve these by introducing smoother transitions and clearer feedback.
             </p>
+            <p> This project was conducted solo over 10 weeks, with iterative feedback from peers and instructor.</p>
           </div>
           <div class="text-wrapper">
             <h4 class="details-column-heading">The Problem</h4>
@@ -74,24 +72,16 @@
             <h4 class="details-column-heading">Goals &amp; Objectives</h4>
             <ul>
               <li>
-                <strong>Ease of Use:</strong> Intuitive, single‑select
-                shade/size behaviors.
-              </li>
-              <li>
                 <strong>Engaging Animations:</strong> Purposeful, branded motion
                 and easing.
               </li>
               <li>
                 <strong>Brand Consistency:</strong> Align with Benefit’s
-                playful, premium tone.
+                playful, modern tone.
               </li>
               <li>
                 <strong>Functionality:</strong> Fully working prototype with
                 documented rules.
-              </li>
-              <li>
-                <strong>Iterative Improvement:</strong> Alpha → Beta → Final
-                refinements.
               </li>
             </ul>
           </div>
@@ -119,9 +109,8 @@
             time.
           </li>
           <li>
-            <strong>Add to Bag:</strong> Pre‑commit hover affordance, on‑click
-            animated label/characters, and timed reset to support repeated
-            actions.
+            <strong>Add to Bag:</strong> Color sweep on hover → cascade
+            characters on click → timed revert for repeated add to bag actions.
           </li>
         </ul>
         <div class="links">
@@ -197,12 +186,13 @@
             ring + animated label text; triggers image cross‑fade.
           </li>
           <li>
-            <strong>Size Selection:</strong> Border color + scale distinction;
-            prevents ambiguous multi‑select.
+            <strong>Size Selection:</strong> Clear active styling with border
+            color/weight and slight scale; only one size can be selected at a
+            time.
           </li>
           <li>
-            <strong>Add to Bag:</strong> Overlay sweep (pre‑commit) → cascade
-            characters (commit) → timed revert for repeated actions.
+            <strong>Add to Bag:</strong> Color sweep on hover → cascade
+            characters on click → timed revert for repeated add to bag actions.
           </li>
           <li>
             <strong>View Details:</strong> Smooth translate and color
@@ -338,12 +328,7 @@
         </div>
         <h4 class="details-column-heading">Smooth Transitions</h4>
         <p>
-          The original interface had abrupt, hard swaps with minimal feedback,
-          which is not an ideal user experience. To fix that, I added eased
-          transitions across all of my new microinteractions. For example, the
-          selected shade label (Rose, Raspberry, Dark Cherry) fades and gently
-          translates into place using <code>ease</code>, which reinforces the
-          state change without feeling sudden.
+         The original interface relied on abrupt, hard swaps with minimal feedback. To fix this, I introduced eased transitions across all new microinteractions. For example, the selected shade label (Rose, Raspberry, Dark Cherry) now fades and gently translates into place using easing, reinforcing the state change without feeling sudden.
         </p>
         <pre><code>
 @keyframes shadeFadeIn {
@@ -401,7 +386,7 @@
           </li>
         </ul>
         <p>
-          Overall, this project reinforced the importance of purposeful motion and clear feedback in creating delightful user experiences. Moving forward, I would have liked to user-test these interactions to gather real metrics on speed and usability. By iterating through multiple builds and focusing on functionality, smooth animation, and brand consistency, I was able to deliver a polished final product that meets user needs while aligning with Benefit Cosmetics' identity.
+          Overall, this project delivered on all of my goals and reinforced the importance of purposeful motion and clear feedback in creating delightful user experiences. If I were to continue this project, I would run user tests to gather real metrics on speed and usability. By iterating through multiple builds and focusing on functionality, smooth animation, and brand consistency, I was able to deliver a polished final product that meets user needs while aligning with Benefit Cosmetics' identity.
         </p>
       </section>
     </main>
