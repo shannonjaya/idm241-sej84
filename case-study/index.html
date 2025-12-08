@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benefit Cosmetics Microinteractions | Case Study</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/syp8ril.css" />
+  </head>
+  <body class="case-study">
+    <div class="hero">
+      <div class="hero-title">
+        <h4>Benefit Cosmetics Microinteractions</h4>
+        <h1>Case Study</h1>
+        <img
+          class="hero-img"
+          src="assets/hero.png"
+          alt="Benefit Cosmetics Case Study Hero"
+        />
+      </div>
+    </div>
+
+    <nav class="case-study-toc" aria-label="Case Study Table of Contents">
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#context-and-challenge">Context &amp; Challenge</a></li>
+        <li><a href="#process-and-insight">Process &amp; Insight</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#results-and-takeaways">Results &amp; Takeaways</a></li>
+      </ul>
+    </nav>
+
+    <main id="case-study">
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>
+          This project is a microinteraction redesign for Benefit Cosmetics’ lip tint quick-view modal. The goal was to improve clarity and delight across five+ interactions using HTML, CSS, and JavaScript. After exploring foundational patterns in a different Alpha prototype, I shifted to Benefit for the Beta and Final builds, which allowed me to focus on refinement rather than starting over. Over 10+ weeks, I iterated on ease of use, brand consistency, and purposeful animation. The final deliverable includes fully developed microinteractions along with documentation of triggers, rules, feedback, and loops/modes.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="context-and-challenge">
+        <h2>Context and Challenge</h2>
+        <div class="content-wrapper">
+          <div class="text-wrapper">
+            <h4 class="details-column-heading">Project Background</h4>
+            <p>
+              Benefit’s quick-view modal lets shoppers choose a shade and size,
+              then add it to their bag. In the original design, several
+              interactions felt abrupt or unclear, especially when switching
+              shades or confirming an “add” action.
+            </p>
+          </div>
+          <div class="text-wrapper">
+            <h4 class="details-column-heading">The Problem</h4>
+            <p>
+              Key actions like shade selection, size selection, and add-to-bag
+              didn’t provide enough visual continuity or satisfying feedback.
+              Image swaps were instant, selection states were easy to miss, and
+              add-to-bag confirmation lacked emphasis.
+            </p>
+          </div>
+          <div class="current-microinteraction-section">
+            <h4 class="details-column-heading">Current Microinteractions</h4>
+            <video
+              class="current-microinteraction"
+              src="./assets/current-microinteraction.mov"
+              controls
+              width="800"
+            ></video>
+          </div>
+          <div class="text-wrapper">
+            <h4 class="details-column-heading">Goals &amp; Objectives</h4>
+            <ul>
+              <li>
+                <strong>Ease of Use:</strong> Intuitive, single‑select
+                shade/size behaviors.
+              </li>
+              <li>
+                <strong>Engaging Animations:</strong> Purposeful, branded motion
+                and easing.
+              </li>
+              <li>
+                <strong>Brand Consistency:</strong> Align with Benefit’s
+                playful, premium tone.
+              </li>
+              <li>
+                <strong>Functionality:</strong> Fully working prototype with
+                documented rules.
+              </li>
+              <li>
+                <strong>Iterative Improvement:</strong> Alpha → Beta → Final
+                refinements.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="process-and-insight">
+        <h2>Process and Insight</h2>
+        <h4 class="details-column-heading">Initial Improvements</h4>
+        <p>
+          I began by breaking the modal into its three core microinteractions,
+          shade selection, size selection, and add-to-bag, because these created
+          the most friction in the original design.
+        </p>
+        <ul>
+          <li>
+            <strong>Shade Selection:</strong> Only one shade can be selected at a
+            time; active state includes inner ring that animates in.
+          </li>
+          <li>
+            <strong>Size Selection:</strong> Clear active styling with border
+            color/weight and slight scale; only one size can be selected at a
+            time.
+          </li>
+          <li>
+            <strong>Add to Bag:</strong> Pre‑commit hover affordance, on‑click
+            animated label/characters, and timed reset to support repeated
+            actions.
+          </li>
+        </ul>
+        <div class="links">
+          <a href="../beta/index.html" class="view-full-details" target="window"
+            >Beta Description</a
+          >
+          <a
+            href="../beta/build/index.html"
+            class="view-full-details"
+            target="window"
+            >Beta Build</a
+          >
+        </div>
+        <div class="beta-microinteraction-section">
+          <div class="microinteraction-gif-wrapper">
+            <h4>Select a Shade Button(s)</h4>
+            <img
+              class="microinteraction-gif"
+              src="../beta/assets/color-btns.gif"
+              alt="Select a Shade Button Microinteraction"
+            />
+          </div>
+          <div class="microinteraction-gif-wrapper">
+            <h4>Select a Size Button(s)</h4>
+            <img
+              class="microinteraction-gif"
+              src="../beta/assets/size-btns.gif"
+              alt="Select a Size Button Microinteraction"
+            />
+          </div>
+          <div class="microinteraction-gif-wrapper">
+            <h4>Add to Bag Button</h4>
+            <img
+              class="microinteraction-gif"
+              src="../beta/assets/add-to-bag-btn.gif"
+              alt="Add to Bag Button Microinteraction"
+            />
+          </div>
+        </div>
+        <h4 class="details-column-heading">Documentation</h4>
+        <p>Across Beta → Final, I documented each interaction in terms of</p>
+        <ul>
+          <li><strong>Triggers</strong> (what starts the behavior)</li>
+          <li><strong>Rules</strong> (logic and constraints)</li>
+          <li>
+            <strong>Feedback</strong> (what the user will SEE, HEAR or FEEL)
+          </li>
+          <li>
+            <strong>Loops/Modes</strong> (repeating objects, additional modules,
+            changes to the microinteraction(s) if conditions change, etc)
+          </li>
+        </ul>
+        <p>
+          This ensured consistent behavior and made iteration straightforward as
+          patterns evolved.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="solution">
+        <h2>Solution</h2>
+        <p>
+          The final implementation combines a total of five primary
+          microinteractions: shade selection, size selection, add‑to‑bag
+          confirmation, view details, and close. Each is defined with clear
+          triggers, rules, and feedback.
+        </p>
+        <h4 class="details-column-heading">Core Microinteractions</h4>
+        <ul>
+          <li>
+            <strong>Shade Selection:</strong> Single active state with inner
+            ring + animated label text; triggers image cross‑fade.
+          </li>
+          <li>
+            <strong>Size Selection:</strong> Border color + scale distinction;
+            prevents ambiguous multi‑select.
+          </li>
+          <li>
+            <strong>Add to Bag:</strong> Overlay sweep (pre‑commit) → cascade
+            characters (commit) → timed revert for repeated actions.
+          </li>
+          <li>
+            <strong>View Details:</strong> Smooth translate and color
+            transition.
+          </li>
+          <li>
+            <strong>Close:</strong> Clear exit with rotation and scale feedback.
+          </li>
+        </ul>
+
+        <div class="links">
+          <a
+            href="../final/index.html"
+            class="view-full-details"
+            target="window"
+            >Final Description</a
+          >
+          <a
+            href="../final/build/index.html"
+            class="view-full-details"
+            target="window"
+            >Final Build</a
+          >
+        </div>
+
+        <div class="microinteraction-section">
+          <div class="microinteraction-wrapper">
+            <div class="quick-view-modal">
+              <div class="quick-view-modal__content">
+                <div class="modal-header">
+                  <svg
+                    class="close-icon"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      style="mask-type: alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="36"
+                      height="36"
+                    >
+                      <rect width="36" height="36" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_579_2198)">
+                      <path
+                        d="M9.59961 27.15L8.84961 26.4L17.2496 18L8.84961 9.59998L9.59961 8.84998L17.9996 17.25L26.3996 8.84998L27.1496 9.59998L18.7496 18L27.1496 26.4L26.3996 27.15L17.9996 18.75L9.59961 27.15Z"
+                        fill="#1C1B1F"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="modal-row">
+                  <div class="product-image-carousel">
+                    <img
+                      src="../final/assets/benetint-rose.png"
+                      alt="Benefit Benetint Lip and Cheek Stain"
+                    />
+                  </div>
+                  <div class="product-details">
+                    <div class="product-title-description">
+                      <h2 class="product-name">Benetint</h2>
+                      <p class="product-description">
+                        Rose-tinted lip & cheek stain
+                      </p>
+                    </div>
+                    <h3 class="product-price">$28.00</h3>
+                    <div class="payment-info">
+                      <p class="product-installments">
+                        4 payments at 0% interest with
+                      </p>
+                      <img
+                        class="klarna-logo"
+                        src="../final/assets/klarna-wordmark.svg"
+                        alt="Klarna Logo"
+                      />
+                      <p class="learn-more">Learn more</p>
+                    </div>
+                    <hr />
+                    <div class="shade-selection">
+                      <p>
+                        Select a Shade: <span class="selected-shade">Rose</span>
+                      </p>
+                      <div class="color-palette">
+                        <button
+                          class="color-btn"
+                          id="rose-btn"
+                          style="background-color: #c70202"
+                        ></button>
+                        <button
+                          class="color-btn"
+                          id="raspberry-btn"
+                          style="background-color: #ce004b"
+                        ></button>
+                        <button
+                          class="color-btn"
+                          id="dark-cherry-btn"
+                          style="background-color: #801700"
+                        ></button>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="size-selection">
+                      <button class="size-btn">
+                        Full Size <strong>$28.00</strong><br />
+                        6.0 mL / 0.2 US fl. oz.
+                      </button>
+                      <button class="size-btn">
+                        Value Size <strong>$36.00</strong><br />
+                        10.0 mL / 0.33 US fl. oz.
+                      </button>
+                    </div>
+                    <div class="add-to-bag-container">
+                      <button class="add-to-bag-btn">
+                        <span class="btn-label">Add to Bag</span>
+                      </button>
+                      <a
+                        class="view-full-details"
+                        href="https://www.benefitcosmetics.com/en-us/product/benetint-cheek-lip-stain-FM173.html"
+                        target="_blank"
+                        >View Full Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="details-column-heading">Smooth Transitions</h4>
+        <p>
+          The original interface had abrupt, hard swaps with minimal feedback,
+          which is not an ideal user experience. To fix that, I added eased
+          transitions across all of my new microinteractions. For example, the
+          selected shade label (Rose, Raspberry, Dark Cherry) fades and gently
+          translates into place using <code>ease</code>, which reinforces the
+          state change without feeling sudden.
+        </p>
+        <pre><code>
+@keyframes shadeFadeIn {
+  from {
+    opacity: 0.5;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+          
+.selected-shade {
+  position: relative;
+  display: inline-block;
+  transition: opacity 250ms ease;
+  opacity: 1;
+}
+
+.selected-shade.is-fading {
+  animation: shadeFadeIn 300ms ease;
+}
+</code></pre>
+        <p>
+          Similar easing is applied across hover states, image cross‑fades, and
+          button feedback so changes feel intentional rather than abrupt.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="results-and-takeaways">
+        <h2>Results &amp; Takeaways</h2>
+        <p>
+          
+        </p>
+        <h4 class="details-column-heading">Key Improvements</h4>
+        <ul class="metric-list" style="margin-top: 1rem">
+          <li>
+            <strong>Smoother Interactions:</strong> Cross-fades and ease make
+            each interaction feel natural instead of jarring.
+          </li>
+          <li>
+            <strong>Satisfying Feedback:</strong> The add-to-bag animation provides clear feedback without feeling over the top.
+          </li>
+          <li>
+            <strong>Brand Alignment:</strong> The motion and hierarchy reflect
+            Benefit’s playful but modern personality.
+          </li>
+          <li>
+            <strong>Maintainable Patterns:</strong> Documenting triggers, rules,
+            and feedback made it easy to maintain and scale each
+            microinteraction.
+          </li>
+        </ul>
+        <p>
+          Overall, this project reinforced the importance of purposeful motion and clear feedback in creating delightful user experiences. Moving forward, I would have liked to user-test these interactions to gather real metrics on speed and usability. By iterating through multiple builds and focusing on functionality, smooth animation, and brand consistency, I was able to deliver a polished final product that meets user needs while aligning with Benefit Cosmetics' identity.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Shannon Jaya</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
